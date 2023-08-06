@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+main {
+    padding: 2rem;
+}
+
+.job-section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.job-list, .applications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.job-card, .application-card {
+    background-color: color-mix(in xyz, rgb(232, 97, 171) percentage, #de59f5 percentage);
+    background-position: 5px;
+    padding: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.job-card:hover, .application-card:hover {
+    transform: translateY(-5px);
+}
+
+.job-card h3, .application-card h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.job-card p, .application-card p {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.job-card button, .application-card button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.job-card button:hover, .application-card button:hover {
+    background-color: #cc5500;
+}
